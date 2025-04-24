@@ -1,0 +1,58 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 40px;
+  background-color: #f8f6f0;
+  flex-wrap: nowrap;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  max-width: 550px;
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #0097b2;
+  margin-top: 0; /* Safe add */
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background-color: #18cb96;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0097b2;
+}
+
+.drone-video {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drone-video video {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

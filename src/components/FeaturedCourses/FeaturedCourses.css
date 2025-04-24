@@ -1,0 +1,119 @@
+/* src/components/FeaturedCourses/FeaturedCourses.css */
+.featured-courses {
+  background-color: #f8f6f0;
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.featured-courses h2 {
+  font-size: 2.5rem;
+  color: #0097b2;
+  margin-bottom: 60px;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.nav-arrow {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #18cb96;
+  transition: color 0.3s ease;
+}
+
+.nav-arrow:hover {
+  color: #0097b2;
+}
+
+.course-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 400px;
+}
+
+.slide-left {
+  animation: slideLeft 0.5s ease-in-out;
+}
+
+.slide-right {
+  animation: slideRight 0.5s ease-in-out;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.course-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px 24px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+}
+
+.course-icon {
+  width: 100px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.course-card h3 {
+  color: #18cb96;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 16px; /* reduced space before button */
+  line-height: 1.5;
+}
+
+.learn-more-btn {
+  background-color: #0097b2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #18cb96;
+}

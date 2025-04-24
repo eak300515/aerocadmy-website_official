@@ -1,0 +1,31 @@
+.header {
+  background-color: #f8f6f0;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #eee;
+
+  /* Remove this 👇 */
+  /* margin-bottom: 20px; */
+}
+
+.logo-img {
+  height: 80px;
+  width: auto;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #18cb96;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #0097b2;
+}

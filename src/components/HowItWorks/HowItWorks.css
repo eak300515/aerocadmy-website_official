@@ -1,0 +1,115 @@
+.how-it-works {
+    background-color: #f8f6f0;
+    text-align: center;
+    padding: 100px 40px;
+  }
+  
+  .how-it-works h2 {
+    font-size: 2.5rem;
+    color: #0097b2;
+    margin-bottom: 60px;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .timeline::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background: #0097b2;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  
+  /* Align left items to the left */
+  .timeline-item.left {
+    justify-content: flex-start;
+  }
+  
+  /* Align right items to the right */
+  .timeline-item.right {
+    justify-content: flex-end;
+  }
+  
+  /* Horizontal line from card to vertical timeline */
+  .connector {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 4px;
+    background: #0097b2;
+  }
+  
+  .timeline-item.left .connector {
+    right: calc(50% - 2px);
+  }
+  
+  .timeline-item.right .connector {
+    left: calc(50% - 2px);
+  }
+  
+  /* Style for content boxes */
+  .content {
+    background: white;
+    padding: 20px;
+    width: 40%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .content:hover {
+    transform: translateY(-5px) rotate(10Deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Align text inside content */
+  .timeline-item.left .content {
+    text-align: right;
+  }
+  
+  .timeline-item.right .content {
+    text-align: left;
+  }
+  
+  /* Step Icons */
+  .step-icon {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .timeline::after {
+      left: 20px;
+    }
+  
+    .timeline-item {
+      justify-content: flex-start;
+    }
+  
+    .connector {
+      display: none; /* Hide connectors on small screens */
+    }
+  
+    .content {
+      width: 80%;
+      text-align: left;
+    }
+  }
+  

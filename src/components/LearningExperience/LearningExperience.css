@@ -1,0 +1,64 @@
+.learning-experience {
+  background-color: #f8f6f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 40px;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.experience-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.experience-content h2 {
+  font-size: 2.5rem;
+  color: #0097b2;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.step {
+  background-color: white;
+  border-left: 6px solid #18cb96;
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.step span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0097b2;
+}
+
+.step p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.experience-video {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-video video {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
